@@ -1,6 +1,7 @@
 
 import './App.css'
-import DataFetch from './Components/DataFetch'
+import Button from './Components/Button'
+
 
 
 
@@ -10,7 +11,7 @@ function App() {
   return (
 
     <div>
-      <DataFetch status="success"></DataFetch>
+      <Button>Click Me</Button>
     </div>
 
 
