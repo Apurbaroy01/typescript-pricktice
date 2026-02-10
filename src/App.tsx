@@ -1,17 +1,29 @@
 
+import { useState } from 'react'
 import './App.css'
-import Button from './Components/Button'
 
+type user ={
+  id: number,
+  name: string,
 
-
+}
 
 function App() {
+  const [count, setCount] = useState<null | user>(null)
 
+  const handleCount = () => {
+    setCount({id: 1, name: "Apurba"})
+  }
 
   return (
 
     <div>
-      <Button>Click Me</Button>
+      
+
+      <button onClick={handleCount}>Add user</button>
+      <p>{count?.id}</p>
+      <p>{count?.name}</p>
+
     </div>
 
 
